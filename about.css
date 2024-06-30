@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    background-color: rgb(10, 56, 56);
+    display: flex;
+    justify-content: space-between;
+}
+#title{
+    font-size: 35px;
+    padding: 20px;
+    color: rgb(76, 191, 206);
+}
+
+#menu{
+    display: none;
+}
+
+#navbar{
+   font-size: 25px;
+}
+.navlink {
+   display:inline-block;
+   text-decoration: none;
+   margin: 10px;
+   padding: 20px;
+   font-weight: 400;
+   color: rgb(76, 191, 206);
+}
+a:hover{
+    color: aqua;
+    transition: .3s;
+}
+
+#heading{
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+}
+
+
+.intro{
+    display: flex;
+    font-size: 25px;
+    padding:18px;
+    margin: 20px;
+}
+
+
+
+.profile-pic{
+    margin-top: 13px;
+    margin-left:15%;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.content{
+    width: 60%;
+    margin: 25px;
+    padding: 25px;
+}
+
+.container3{
+    margin:0 250px;
+   
+}
+.main{
+    background-color: azure;
+}
+
+#travel{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+#guides{
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+
+.para{
+    width: 96%;
+    font-size: 25px;
+}
+
+.para1{
+    font-size:35px ;
+}
+
+.para2{
+    font-size: 25px;
+    margin: 15px 0;
+    width: 95%;
+}
+.para2 a{
+    text-decoration: none;
+}
+.para3{
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.tips li{
+font-size: 25px;
+margin-left: 50px;
+
+}
+
+
+#footer{
+    background-color: rgb(10, 56, 56);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 5px;
+    color: rgb(76, 191, 206);
+}
+
+@media only screen and (max-width: 750px){
+    #navbar{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: rgb(76, 191, 206);
+    }
+   
+    .fa-solid{
+        padding: 20px 8px;
+        margin: 0 50px;
+        font-size: 38px;
+        width: 40px;
+        height: 70px;
+        color: rgb(15, 123, 218);
+      
+    }
+}
+
+@media only screen and (max-width:720px) {
+    .intro{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+    }
+    .para2{
+        font-size: 25px;
+        margin: 5px 0;
+        width: 95%;
+    }
+    .profile-pic{
+        margin-left: 0%;
+    }  
+}
